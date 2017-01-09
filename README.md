@@ -7,4 +7,4 @@ The objective of this project is to clone human driving behavior using a Deep Ne
 
 Training | Validation
 ------------|---------------
-(./images/track_one.gif) | (./images/track_two.gif)
+![training_img](./images/track_one.gif) | ![validation_img](./images/track_two.gif)
