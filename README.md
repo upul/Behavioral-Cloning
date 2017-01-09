@@ -44,3 +44,10 @@ Left| Center | Right
 ![left](./images/left.png) | ![center](./images/center.png) | ![right](./images/right.png)
 
 Collected data are processed before feeding into the deep neural network and those preprocessing steps are described in the latter part of this file. 
+
+
+### Archi
+
+<p align="center">
+ <img src="./images/conv_architecture.png" height="540">
+</p>
