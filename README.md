@@ -32,3 +32,10 @@ Run this command at the terminal prompt to install [OpenCV](http://opencv.org/).
 This repository comes with trained model which you can directly test using the following command.
 
 - `python drive.py model.json`
+
+## Data Capturing
+
+During the training, the simulator captures data with a frequency of 10hz. Also, at a given time step it recorded three images taken from left, center, and right cameras. The following figure shows an example I have collected during the training time.
+
+Left| Center | Right
+![left](./images/left.jpg) | ![center](./images/center.jpg) | ![right](./images/right.jpg)
