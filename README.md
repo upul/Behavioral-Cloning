@@ -48,3 +48,5 @@ Collected data are processed before feeding into the deep neural network and tho
 
 ### Archi
 ![conv_archi](./images/conv_architecture.png)
+
+<img src="./images/conv_architecture.png" height="100">
