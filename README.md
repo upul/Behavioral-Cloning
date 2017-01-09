@@ -26,3 +26,9 @@ This project requires **Python 3.5** and the following Python libraries installe
 Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
 
 - `conda install -c https://conda.anaconda.org/menpo opencv3`
+
+### How to Run the Model
+
+This repository comes with trained model which you can directly test using the following command.
+
+```python drive.py model.json```
