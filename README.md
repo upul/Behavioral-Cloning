@@ -39,4 +39,4 @@ During the training, the simulator captures data with a frequency of 10hz. Also,
 
 Left| Center | Right
 ----|--------|-------
-![left](./images/left.jpg) | ![center](./images/center.jpg) | ![right](./images/right.jpg)
+![left](./images/left.png) | ![center](./images/center.png) | ![right](./images/right.png)
