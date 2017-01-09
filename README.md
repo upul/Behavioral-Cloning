@@ -45,6 +45,8 @@ Left| Center | Right
 
 Collected data are processed before feeding into the deep neural network and those preprocessing steps are described in the latter part of this file. 
 
+### Dataset Statistics
+The dataset consists of 24108 images ( 8036 images per camera angle). The training track contains a lot of shallow turns and straight road segments. Hence, the majority of the recorded steering angles are zeros. Therefore, preprocessing images and respective steering angles are necessary in order to generalize the training model for unseen tracks such as our validation track. 
 
 ### Archi
 
