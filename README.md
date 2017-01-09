@@ -17,10 +17,10 @@ This project requires **Python 3.5** and the following Python libraries installe
 - [Keras](https://keras.io/)
 - [NumPy](http://www.numpy.org/)
 - [SciPy](https://www.scipy.org/)
-- [scikit-learn](http://scikit-learn.org/)
 - [TensorFlow](http://tensorflow.org)
 - [Pandas](http://pandas.pydata.org/)
-- [Matplotlib](http://matplotlib.org/)
+- [OpenCV](http://opencv.org/)
+- [Matplotlib](http://matplotlib.org/) (Optional)
 - [Jupyter](http://jupyter.org/) (Optional)
 
 Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
