@@ -31,4 +31,4 @@ Run this command at the terminal prompt to install [OpenCV](http://opencv.org/).
 
 This repository comes with trained model which you can directly test using the following command.
 
-```python drive.py model.json```
+- `python drive.py model.json`
