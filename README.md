@@ -52,4 +52,6 @@ Collected data are processed before feeding into the deep neural network and tho
  <img src="./images/conv_architecture.png" height="540">
 </p>
 
-![pipeline](./images/pipeline.png)
+<p align="center">
+ <img src="./images/pipeline.png">
+</p>
