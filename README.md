@@ -33,7 +33,9 @@ This repository comes with trained model which you can directly test using the f
 
 - `python drive.py model.json`
 
-## Data Capturing
+## Implementation
+
+### Data Capturing
 
 During the training, the simulator captures data with a frequency of 10hz. Also, at a given time step it recorded three images taken from left, center, and right cameras. The following figure shows an example I have collected during the training time.
 
