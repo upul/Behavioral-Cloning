@@ -42,3 +42,5 @@ During the training, the simulator captures data with a frequency of 10hz. Also,
 Left| Center | Right
 ----|--------|-------
 ![left](./images/left.png) | ![center](./images/center.png) | ![right](./images/right.png)
+
+Collected data are processed before feeding into the deep neural network and those preprocessing steps are described in the latter part of this file. 
