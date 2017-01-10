@@ -63,6 +63,8 @@ The images captured by the simulator come with a lot of details which do not dir
 
 The next stage of the data processing pipeline is called random flip stage. In this stage we randomly (with 0.5 probability) flip images. The idea behind this operation is left turning bends are more prevalent than right bends in the training track. Hence, in order to increase the generalization of our mode, we flip images and respective steering angles. 
 
+In the final state of the pipeline, we resize images to 64x64 in order to reduce training time.
+
 ### Archi
 
 <p align="center">
