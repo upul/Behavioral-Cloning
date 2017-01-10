@@ -50,12 +50,19 @@ The dataset consists of 24108 images ( 8036 images per camera angle). The traini
 
 Next, we are going explain our data processing pipeline.
 
+### Data Processing Pipeline
+The following figure shows our data preprocessing pipeline.
+
+<p align="center">
+ <img src="./images/pipeline.png">
+</p>
+
+In the very first state of the pipeline, we apply random shear operation. However, we select images with 0.9 probability for the random shearing process. We kept 10 percent of original images and steering angles in order to help the car to navigate in the training track.
+
 ### Archi
 
 <p align="center">
  <img src="./images/conv_architecture.png" height="540">
 </p>
 
-<p align="center">
- <img src="./images/pipeline.png">
-</p>
+
