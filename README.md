@@ -73,4 +73,7 @@ Our convolutional neural network architecture was inspired by NVIDIA's End to En
  <img src="./images/conv_architecture.png" height="540">
 </p>
 
+### Training
+Even after cropping and resizing training images with considering all augmented images, training dataset was very large and could not fit into the main memory. Hence, we used `fit_generator` API of the Keras library for training our mode. 
+
 
