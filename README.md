@@ -63,9 +63,11 @@ The images captured by the simulator come with a lot of details which do not dir
 
 The next stage of the data processing pipeline is called random flip stage. In this stage we randomly (with 0.5 probability) flip images. The idea behind this operation is left turning bends are more prevalent than right bends in the training track. Hence, in order to increase the generalization of our mode, we flip images and respective steering angles. 
 
-In the final state of the pipeline, we resize images to 64x64 in order to reduce training time.
+In the final state of the pipeline, we resize images to 64x64 in order to reduce training time. Resized images are fed into the neural network and next we are going to discuss our neural network architecture.
 
-### Archi
+##Network Architecture 
+
+Our convolutional neural network architecture was inspired by NVIDIA's End to End Learning for Self-Driving Cars paper. The main difference between our model and the NVIDIA mode is than we did use MaxPooling layers just after each  Convolutional Layer in order to cut down training time. For more details about our network architecture please refer following figure.
 
 <p align="center">
  <img src="./images/conv_architecture.png" height="540">
