@@ -77,8 +77,8 @@ Our convolutional neural network architecture was inspired by NVIDIA's End to En
 Even after cropping and resizing training images with considering all augmented images, training dataset was very large and could not fit into the main memory. Hence, we used `fit_generator` API of the Keras library for training our model.
 
 We created two generators namely:
-1. `train_gen = helper.generate_next_batch()`
-2. `validation_gen = helper.generate_next_batch()` 
+* `train_gen = helper.generate_next_batch()`
+* `validation_gen = helper.generate_next_batch()` 
 
 Batch size of both `train_gen` and `validation_gen` was 64. We used 20032 images per training epoch as these images are generated on the fly using the document processing pipeline described above. In addition to that, we used 6400 images (also generated on the fly) for validation. We used `Adam` with `1e-4` learning rate. 
 
