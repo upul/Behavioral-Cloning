@@ -54,7 +54,7 @@ def telemetry(sid, data):
     # The driving model currently just outputs a constant throttle. Feel free to edit this.
     throttle = 0.3
 
-    print('steering angle: {:.5f} throttle: {:.1f}'.format(steering_angle, throttle))
+    print('{:.5f}, {:.1f}'.format(steering_angle, throttle))
 
     send_control(steering_angle, throttle)
 
