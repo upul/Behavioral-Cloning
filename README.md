@@ -46,7 +46,7 @@ Left| Center | Right
 Collected data are processed before feeding into the deep neural network and those preprocessing steps are described in the latter part of this file. 
 
 ### Dataset Statistics
-The dataset consists of 24108 images ( 8036 images per camera angle). The training track contains a lot of shallow turns and straight road segments. Hence, the majority of the recorded steering angles are zeros. Therefore, preprocessing images and respective steering angles are necessary in order to generalize the training model for unseen tracks such as our validation track.
+The dataset consists of 24108 images (8036 images per camera angle). The training track contains a lot of shallow turns and straight road segments. Hence, the majority of the recorded steering angles are zeros. Therefore, preprocessing images and respective steering angles are necessary in order to generalize the training model for unseen tracks such as our validation track.
 
 Next, we are going explain our data processing pipeline.
 
@@ -65,7 +65,7 @@ The next stage of the data processing pipeline is called random flip stage. In t
 
 In the final state of the pipeline, we resize images to 64x64 in order to reduce training time. Resized images are fed into the neural network and next we are going to discuss our neural network architecture.
 
-##Network Architecture 
+### Network Architecture 
 
 Our convolutional neural network architecture was inspired by NVIDIA's End to End Learning for Self-Driving Cars paper. The main difference between our model and the NVIDIA mode is than we did use MaxPooling layers just after each  Convolutional Layer in order to cut down training time. For more details about our network architecture please refer following figure.
 
