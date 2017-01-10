@@ -80,6 +80,6 @@ We created two generators namely:
 * `train_gen = helper.generate_next_batch()`
 * `validation_gen = helper.generate_next_batch()` 
 
-Batch size of both `train_gen` and `validation_gen` was 64. We used 20032 images per training epoch as these images are generated on the fly using the document processing pipeline described above. In addition to that, we used 6400 images (also generated on the fly) for validation. We used `Adam` with `1e-4` learning rate. 
+Batch size of both `train_gen` and `validation_gen` was 64. We used 20032 images per training epoch as these images are generated on the fly using the document processing pipeline described above. In addition to that, we used 6400 images (also generated on the fly) for validation. We used `Adam` with `1e-4` learning rate. Finally, when it comes to a number of training epochs we tried several possibilities such as 5, 8, 10, 25 and 50. However, 8 works well on both training and validation tracks. 
 
 
