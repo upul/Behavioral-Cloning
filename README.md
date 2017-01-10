@@ -17,10 +17,10 @@ This project requires **Python 3.5** and the following Python libraries installe
 - [Keras](https://keras.io/)
 - [NumPy](http://www.numpy.org/)
 - [SciPy](https://www.scipy.org/)
-- [scikit-learn](http://scikit-learn.org/)
 - [TensorFlow](http://tensorflow.org)
 - [Pandas](http://pandas.pydata.org/)
-- [Matplotlib](http://matplotlib.org/)
+- [OpenCV](http://opencv.org/)
+- [Matplotlib](http://matplotlib.org/) (Optional)
 - [Jupyter](http://jupyter.org/) (Optional)
 
 Run this command at the terminal prompt to install [OpenCV](http://opencv.org/). Useful for image processing:
@@ -45,9 +45,15 @@ Left| Center | Right
 
 Collected data are processed before feeding into the deep neural network and those preprocessing steps are described in the latter part of this file. 
 
+### Dataset Statistics
+The dataset consists of 24108 images ( 8036 images per camera angle). The training track contains a lot of shallow turns and straight road segments. Hence, the majority of the recorded steering angles are zeros. Therefore, preprocessing images and respective steering angles are necessary in order to generalize the training model for unseen tracks such as our validation track. 
 
 ### Archi
 
 <p align="center">
  <img src="./images/conv_architecture.png" height="540">
+</p>
+
+<p align="center">
+ <img src="./images/pipeline.png">
 </p>
