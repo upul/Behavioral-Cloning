@@ -54,7 +54,7 @@ Next, we are going explain our data processing pipeline.
 The following figure shows our data preprocessing pipeline.
 
 <p align="center">
- <img src="./images/pipeline.png" width="525">
+ <img src="./images/pipeline.png" width="550">
 </p>
 
 In the very first state of the pipeline, we apply random shear operation. However, we select images with 0.9 probability for the random shearing process. We kept 10 percent of original images and steering angles in order to help the car to navigate in the training track.
@@ -88,7 +88,7 @@ Next we are going to discuss our neural network architecture.
 Our convolutional neural network architecture was inspired by NVIDIA's End to End Learning for Self-Driving Cars paper. The main difference between our model and the NVIDIA mode is than we did use MaxPooling layers just after each  Convolutional Layer in order to cut down training time. For more details about our network architecture please refer following figure.
 
 <p align="center">
- <img src="./images/conv_architecture.png" height="540">
+ <img src="./images/conv_architecture.png" height="600">
 </p>
 
 ### Training
