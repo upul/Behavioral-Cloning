@@ -14,10 +14,13 @@ number_of_validation_samples = 6400
 learning_rate = 1e-4
 activation_relu = 'relu'
 
+# Our model is based on NVIDIA's "End to End Learning for Self-Driving Cars" paper
+# Source:  https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
 model = Sequential()
 
 model.add(Lambda(lambda x: x / 127.5 - 1.0, input_shape=(64, 64, 3)))
 
+# starts with five convolutional and maxpooling layers
 model.add(Convolution2D(24, 5, 5, border_mode='same', subsample=(2, 2)))
 model.add(Activation(activation_relu))
 model.add(MaxPooling2D(pool_size=(2, 2), strides=(1, 1)))
@@ -40,6 +43,7 @@ model.add(MaxPooling2D(pool_size=(2, 2), strides=(1, 1)))
 
 model.add(Flatten())
 
+# Next, five fully connected layers
 model.add(Dense(1164))
 model.add(Activation(activation_relu))
 
@@ -58,8 +62,10 @@ model.summary()
 
 model.compile(optimizer=Adam(learning_rate), loss="mse", )
 
+# create two generators for training and validation
 train_gen = helper.generate_next_batch()
 validation_gen = helper.generate_next_batch()
+
 history = model.fit_generator(train_gen,
                               samples_per_epoch=number_of_samples_per_epoch,
                               nb_epoch=number_of_epochs,
@@ -67,4 +73,5 @@ history = model.fit_generator(train_gen,
                               nb_val_samples=number_of_validation_samples,
                               verbose=1)
 
+# finally save our model and weights
 helper.save_model(model)
