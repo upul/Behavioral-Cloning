@@ -65,9 +65,21 @@ In the very first state of the pipeline, we apply random shear operation. Howeve
 
 The images captured by the simulator come with a lot of details which do not directly help model building process.  In addition to that extra space occupied by these details required additional processing power. Hence, we remove 35 percent of the original image from the top and 10 percent. This process was done in crop stage.
 
+<p align="center">
+ <img src="./images/cropped.png">
+</p>
+
 The next stage of the data processing pipeline is called random flip stage. In this stage we randomly (with 0.5 probability) flip images. The idea behind this operation is left turning bends are more prevalent than right bends in the training track. Hence, in order to increase the generalization of our mode, we flip images and respective steering angles. 
 
+<p align="center">
+ <img src="./images/flipped.png">
+</p>
+
 In the final state of the pipeline, we resize images to 64x64 in order to reduce training time. Resized images are fed into the neural network and next we are going to discuss our neural network architecture.
+
+<p align="center">
+ <img src="./images/resized.png">
+</p>
 
 ### Network Architecture 
 
