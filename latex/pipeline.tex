@@ -11,7 +11,7 @@
         output/.style = {circle, draw=magenta,  fill=magenta!10, thin},
     }
     
-    \node[node](input)[text width=2cm]{\scriptsize input image and angle};
+    \node[node](input)[text width=2cm]{\scriptsize input: images and steering angles};
     
     \node[node](shear)[right = 0.2cm of input]{\scriptsize random shear};
     
@@ -21,7 +21,7 @@
     
     \node[node](gamma)[right = 0.2cm of flip]{\scriptsize random gamma}; 
     
-    \node[node](resize)[right = 0.2cm of gamma, text width=2cm]{\scriptsize resized image and angle};
+    \node[node](resize)[right = 0.2cm of gamma, text width=2cm]{\scriptsize output: resized images and angles};
     
     \path [line] (input) -- (shear);
     \path [line] (shear) -- (crop);

@@ -11,7 +11,7 @@
         output/.style = {circle, draw=magenta,  fill=magenta!10, thin},
     }
     
-    \node[node](input){\scriptsize input};
+    \node[node](input){\scriptsize input: images and steering angles};
     
     \node[node](conv1)[below = 0.5cm of input]{\scriptsize convolution: kernel: 5x5 depth: 24};
     \node[node](pool1)[below = 0.2cm of conv1]{\scriptsize max pooling: 2x2};
